@@ -2,19 +2,25 @@
 
 ## 1. Projekti eesmärk
 
-**KAKS TÖÖREZHIIMI** (manuaalse ümberlülitamisega)
+**KAKS TÖÖREZHIIMI** (manuaalse ümberlülitusega)
 
 ### Kokkuhoiu rezhiim
-  - nö. soojemate ilmadega,  **−12 °C välistemperatuurini**
+  - nö. soojemate ilmadega, **−12 °C välistemperatuurini**
   - "**<span style="color:red">Curve 3 + Offset 12</span>**" ([GRAAFIK](https://una-newbury.github.io/midea/))
   - −12 °C juures on see **target 53.3 °C**
   - mis senise kogemuse põhjal on veel "odavama elektrikulu" piirkonnas (plahvatus toimub kusagil 50 ja 60 vahel)
+  - toetuda võimalikult kompressori tööle
+  - elektriline lisaküte asub osalema alles siis, kui hädavajalik
 
 ### Krõbeda külma rezhiim
   - külmem kui **−12 °C välistemperatuur**
   - **<span style="color:red">manuaalselt target 60 °C</span>** peale
   - "OK, päev on pakaseline, kuluta rohkem energiat/raha"
   - kui külmad möödas, siis manuaalselt tagasi "Curve 3 + Offset 12" peale
+
+
+
+
 
 * nö. soojemate ilmadega,  **−12 °C välistemperatuurini**, töötaks süsteem nii, et ta ei üritaks ajada küttevee temperatuuri üle  **50–53 °C** (eeldatavasti nende eesmärk-kraadide juures elektrikulu veel ei lähe kõrgustesse).
 * alates  **−12 °C välistemperatuurist** aga lülituks sisse max  **60 °C** ehk "kallis töörežiim" ehk "OK, päev on pakaseline, kuluta rohkem energiat/raha".
