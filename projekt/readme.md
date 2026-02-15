@@ -2,7 +2,24 @@
 
 ## 1. Projekti eesmärk
 
-Selle projekti eesmärk on seadistada õhk-vesi soojuspump nii, et:
+KAKS TÖÖREZHIIMI (manuaalse ümberlülitamisega)
+
+* Kokkuhoiu rezhiim
+  - nö. soojemate ilmadega,  **−12 °C välistemperatuurini**
+  - "Curve 3 + Offset 12" ((GRAAFIK)[https://una-newbury.github.io/midea/])
+  - −12 °C juures on see **target 53.3 °C**
+  - mis senise kogemuse põhjal on veel "odavama elektrikulu" piirkonnas (plahvatus toimub kusagil 50 ja 60 vahel)
+* Krõbeda külma rezhiim
+  - külmem kui **−12 °C välistemperatuur**
+  - manuaalselt **target 60 °C** peale
+  - "OK, päev on pakaseline, kuluta rohkem energiat/raha"
+  - kui külmad möödas, siis manuaalselt tagasi "Curve 3 + Offset 12" peale
+
+* nö. soojemate ilmadega,  **−12 °C välistemperatuurini**, töötaks süsteem nii, et ta ei üritaks ajada küttevee temperatuuri üle  **50–53 °C** (eeldatavasti nende eesmärk-kraadide juures elektrikulu veel ei lähe kõrgustesse).
+* alates  **−12 °C välistemperatuurist** aga lülituks sisse max  **60 °C** ehk "kallis töörežiim" ehk "OK, päev on pakaseline, kuluta rohkem energiat/raha".
+* ühesõnaga vältida olukorda, kus lisaküte ja/või kõrge küttevee temperatuur ja/või kompressori ebaoptimaalne töö domineerib juba mõõdukate miinuskraadide juures.
+
+Seadistada õhk-vesi soojuspump nii, et:
 
 - kompressor töötab maksimaalselt suure osa talvest iseseisvalt,
 - elektriline lisaküte (IBH) osaleb alles siis, kui see on reaalselt vajalik,
