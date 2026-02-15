@@ -6,12 +6,13 @@
 
 ### Kokkuhoiu rezhiim
   - nö. soojemate ilmadega,  **−12 °C välistemperatuurini**
-  - "Curve 3 + Offset 12" ([GRAAFIK](https://una-newbury.github.io/midea/))
+  - "**<span style="color:red">Curve 3 + Offset 12</span>**" ([GRAAFIK](https://una-newbury.github.io/midea/))
   - −12 °C juures on see **target 53.3 °C**
   - mis senise kogemuse põhjal on veel "odavama elektrikulu" piirkonnas (plahvatus toimub kusagil 50 ja 60 vahel)
+
 ### Krõbeda külma rezhiim
   - külmem kui **−12 °C välistemperatuur**
-  - manuaalselt **target 60 °C** peale
+  - **<span style="color:red">manuaalselt target 60 °C</span>** peale
   - "OK, päev on pakaseline, kuluta rohkem energiat/raha"
   - kui külmad möödas, siis manuaalselt tagasi "Curve 3 + Offset 12" peale
 
