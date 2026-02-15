@@ -6,9 +6,9 @@
 
 ### <img src="files/euro.png" alt="settings" width="16" height="16"> <img src="files/euro.png" alt="settings" width="16" height="16"> <img src="files/euro.png" alt="settings" width="16" height="16"> Kokkuhoiu rezhiim <img src="files/euro.png" alt="settings" width="16" height="16"> <img src="files/euro.png" alt="settings" width="16" height="16"> <img src="files/euro.png" alt="settings" width="16" height="16">
   - nö. soojemate ilmadega, **−12 °C välistemperatuurini**
-  - "**<span style="color:red">Curve 3 + Offset 12</span>**"
-  - −12 °C juures on see **target 53.3 °C** (vt. graafik allpool)
-  - mis peaks olema veel "odavama elektrikulu" piirkonnas
+  - "**<span style="color:red">Curve 3 + Offset 12</span>**" ([GRAAFIK](https://una-newbury.github.io/midea/))
+  - −12 °C juures on see **target 53.3 °C**
+  - mis senise kogemuse põhjal on veel "odavama elektrikulu" piirkonnas ("plahvatus" toimub kusagil 53 ja 60 vahel)
   - toetuda võimalikult kompressori tööle
   - elektriline lisaküte asub osalema alles siis, kui hädavajalik
   - aga siiski mitte ka kompressorit hulluks ajada, leida minimaalse elektritarbimise kombinatsioon (parameetrite abil, vt. allpool)
@@ -18,8 +18,6 @@
   - **<span style="color:red">manuaalselt target 60 °C</span>** peale
   - "OK, päev on pakaseline, kuluta rohkem energiat/raha"
   - kui külmad möödas, siis manuaalselt tagasi "Curve 3 + Offset 12" peale
-
-![img.png](img.png)
 
 ## 2. Olulised parameetrid
 
@@ -43,13 +41,13 @@ Leitavad ka manuaalist (kuigi ilma kirjelduseta):
 
 ja (arvatavad) tehase seadistused (TS)
 
-| Parameeter    | TS     | Idee                                                                                 |
-|---------------|--------|--------------------------------------------------------------------------------------|
-| `T4HMAX`      | ?      | Ei muuda eriti asja (võimalik valida vahemikus 20-35 kraadi)                         |
-| `T4HMIN`      | -15 °C | <span style="color:red">Langetada -25 °C peale</span>                                |
-| `dT1_IBH_ON`  | 5 °C   | Jätta 5 °C (võimalik valida 2-10 kraadise hüstereesi vahel)                          |
-| `t_IBH_Delay` | 30 min | Jätta 30 min (võimalik valida 15-120 min)                                            |
-| `T4_IBH_ON`   | -5 °C  | <span style="color:red">Langetada -13 °C peale</span> (võimalik valida +10 kuni -15) |
+| Parameeter    | TS     | Idee                                                                                      |
+|---------------|--------|-------------------------------------------------------------------------------------------|
+| `T4HMAX`      | ?      | Vist ei muuda eriti asja (?) (võimalik valida vahemikus 20-35 kraadi)                     |
+| `T4HMIN`      | -15 °C | <span style="color:red">Langetada -25 °C peale?</span>                                    |
+| `dT1_IBH_ON`  | 5 °C   | Jätta 5 °C (võimalik valida 2-10 kraadise hüstereesi vahel)                               |
+| `t_IBH_Delay` | 30 min | Jätta 30 min (võimalik valida 15-120 min)                                                 |
+| `T4_IBH_ON`   | -5 °C  | <span style="color:red">Kas panna see -13 °C peale?</span> (võimalik valida +10 kuni -15) |
 
 
 ## 4. Parameetrite valiku loogika
