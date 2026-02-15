@@ -2,14 +2,14 @@
 
 ## 1. Projekti eesmärk
 
-KAKS TÖÖREZHIIMI (manuaalse ümberlülitamisega)
+**KAKS TÖÖREZHIIMI** (manuaalse ümberlülitamisega)
 
-* Kokkuhoiu rezhiim
+### Kokkuhoiu rezhiim
   - nö. soojemate ilmadega,  **−12 °C välistemperatuurini**
-  - "Curve 3 + Offset 12" ((GRAAFIK)[https://una-newbury.github.io/midea/])
+  - "Curve 3 + Offset 12" ([GRAAFIK](https://una-newbury.github.io/midea/))
   - −12 °C juures on see **target 53.3 °C**
   - mis senise kogemuse põhjal on veel "odavama elektrikulu" piirkonnas (plahvatus toimub kusagil 50 ja 60 vahel)
-* Krõbeda külma rezhiim
+### Krõbeda külma rezhiim
   - külmem kui **−12 °C välistemperatuur**
   - manuaalselt **target 60 °C** peale
   - "OK, päev on pakaseline, kuluta rohkem energiat/raha"
