@@ -13,7 +13,7 @@
   - elektriline lisaküte asub osalema alles siis, kui hädavajalik
   - aga siiski mitte ka kompressorit hulluks ajada, leida minimaalse elektritarbimise kombinatsioon (parameetrite abil, vt. allpool)
 
-### Krõbeda külma rezhiim
+### Krõbeda külma rezhiim <img src="files/cold.png" alt="settings" width="16" height="16">
   - külmem kui **−12 °C välistemperatuur**
   - **<span style="color:red">manuaalselt target 60 °C</span>** peale
   - "OK, päev on pakaseline, kuluta rohkem energiat/raha"
@@ -23,7 +23,7 @@
 
 (maaletooja sõnastus)
 
-Nende settingutega saab määrata mis hetkeni töötab kompressoriga ja elektri tenni kasutamise loogika:
+Nende settingutega saab määrata mis hetkeni töötab kompressoriga ja elektritenni kasutamise loogika:
 
 | Parameeter    | Kirjeldus                                                                                                           |
 |---------------|---------------------------------------------------------------------------------------------------------------------|
@@ -34,8 +34,8 @@ Nende settingutega saab määrata mis hetkeni töötab kompressoriga ja elektri 
 | `T4_IBH_ON`   | Välisõhutemperatuur, millest alates on lubatud elektritenni võimsuse puudujäägi korral lülitada.                    |
 
 Leitavad ka manuaalist (kuigi ilma kirjelduseta):
-- https://www.emhbt.com/Manual/controller/controller-2024/kjrh-120l2/operation-manualsmarthome
-- kontroller `KJRH-120L2`
+- [https://www.emhbt.com/Manual/controller/controller-2024/kjrh-120l2/operation-manualsmarthome](https://www.emhbt.com/Manual/controller/controller-2024/kjrh-120l2/operation-manualsmarthome)
+- (kontroller `KJRH-120L2`)
 
 ## 3. TODO
 
