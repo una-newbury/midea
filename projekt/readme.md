@@ -11,6 +11,7 @@
   - mis senise kogemuse põhjal on veel "odavama elektrikulu" piirkonnas ("plahvatus" toimub kusagil 53 ja 60 vahel)
   - toetuda võimalikult kompressori tööle
   - elektriline lisaküte asub osalema alles siis, kui hädavajalik
+  - aga siiski mitte ka kompressorit hulluks ajada, leida minimaalse elektritarbimise kombinatsioon (parameetrite abil, vt. allpool)
 
 ### Krõbeda külma rezhiim
   - külmem kui **−12 °C välistemperatuur**
