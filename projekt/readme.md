@@ -7,7 +7,7 @@
 ### <img src="files/euro.png" alt="settings" width="16" height="16"> <img src="files/euro.png" alt="settings" width="16" height="16"> <img src="files/euro.png" alt="settings" width="16" height="16"> Kokkuhoiu rezhiim <img src="files/euro.png" alt="settings" width="16" height="16"> <img src="files/euro.png" alt="settings" width="16" height="16"> <img src="files/euro.png" alt="settings" width="16" height="16">
   - nö. soojemate ilmadega, **−12 °C välistemperatuurini**
   - "**<span style="color:red">Curve 3 + Offset 12</span>**"
-  - −12 °C juures on see **target 53.3 °C**
+  - −12 °C juures on see **target 53.3 °C** (vt. graafik allpool)
   - mis peaks olema veel "odavama elektrikulu" piirkonnas
   - toetuda võimalikult kompressori tööle
   - elektriline lisaküte asub osalema alles siis, kui hädavajalik
