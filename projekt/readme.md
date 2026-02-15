@@ -8,7 +8,7 @@
   - nö. soojemate ilmadega, **−12 °C välistemperatuurini**
   - "**<span style="color:red">Curve 3 + Offset 12</span>**" ([GRAAFIK](https://una-newbury.github.io/midea/))
   - −12 °C juures on see **target 53.3 °C**
-  - mis senise kogemuse põhjal on veel "odavama elektrikulu" piirkonnas (plahvatus toimub kusagil 50 ja 60 vahel)
+  - mis senise kogemuse põhjal on veel "odavama elektrikulu" piirkonnas ("plahvatus" toimub kusagil 53 ja 60 vahel)
   - toetuda võimalikult kompressori tööle
   - elektriline lisaküte asub osalema alles siis, kui hädavajalik
 
