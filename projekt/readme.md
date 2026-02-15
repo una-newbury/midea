@@ -4,7 +4,7 @@
 
 **KAKS TÖÖREZHIIMI** (manuaalse ümberlülitusega)
 
-### <img src="files/euro.png" alt="settings" width="16" height="16"> Kokkuhoiu rezhiim <img src="files/euro.png" alt="settings" width="16" height="16">
+### <img src="files/euro.png" alt="settings" width="16" height="16"> <img src="files/euro.png" alt="settings" width="16" height="16"> <img src="files/euro.png" alt="settings" width="16" height="16"> Kokkuhoiu rezhiim <img src="files/euro.png" alt="settings" width="16" height="16"> <img src="files/euro.png" alt="settings" width="16" height="16"> <img src="files/euro.png" alt="settings" width="16" height="16">
   - nö. soojemate ilmadega, **−12 °C välistemperatuurini**
   - "**<span style="color:red">Curve 3 + Offset 12</span>**" ([GRAAFIK](https://una-newbury.github.io/midea/))
   - −12 °C juures on see **target 53.3 °C**
@@ -13,7 +13,7 @@
   - elektriline lisaküte asub osalema alles siis, kui hädavajalik
   - aga siiski mitte ka kompressorit hulluks ajada, leida minimaalse elektritarbimise kombinatsioon (parameetrite abil, vt. allpool)
 
-### <img src="files/cold.png" alt="settings" width="16" height="16"> Krõbeda külma rezhiim <img src="files/cold.png" alt="settings" width="16" height="16">
+### <img src="files/cold.png" alt="settings" width="16" height="16"> <img src="files/cold.png" alt="settings" width="16" height="16"> <img src="files/cold.png" alt="settings" width="16" height="16"> Krõbeda külma rezhiim <img src="files/cold.png" alt="settings" width="16" height="16"> <img src="files/cold.png" alt="settings" width="16" height="16"> <img src="files/cold.png" alt="settings" width="16" height="16">
   - külmem kui **−12 °C välistemperatuur**
   - **<span style="color:red">manuaalselt target 60 °C</span>** peale
   - "OK, päev on pakaseline, kuluta rohkem energiat/raha"
