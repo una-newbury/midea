@@ -41,13 +41,13 @@ Leitavad ka manuaalist (kuigi ilma kirjelduseta):
 
 ja (arvatavad) tehase seadistused (TS)
 
-| Parameeter    | TS     | Idee                                                                  |
-|---------------|--------|-----------------------------------------------------------------------|
-| `T4HMAX`      | ?      | Vist ei muuda eriti asja (?) (võimalik valida vahemikus 20-35 kraadi) |
-| `T4HMIN`      | -15 °C | Langetada -25 °C peale (?)                                            |
-| `dT1_IBH_ON`  | 5 °C   | Jätta 5 °C (võimalik valida 2-10 kraadise hüstereesi vahel)           |
-| `t_IBH_Delay` | 30 min | Jätta 30 min (võimalik valida 15-120 min)                             |
-| `T4_IBH_ON`   | -5 °C  | Kas panna see -13 °C peale? (võimalik valida +10 kuni -15)            |
+| Parameeter    | TS     | Idee                                                                                      |
+|---------------|--------|-------------------------------------------------------------------------------------------|
+| `T4HMAX`      | ?      | Vist ei muuda eriti asja (?) (võimalik valida vahemikus 20-35 kraadi)                     |
+| `T4HMIN`      | -15 °C | <span style="color:red">Langetada -25 °C peale?</span>                                    |
+| `dT1_IBH_ON`  | 5 °C   | Jätta 5 °C (võimalik valida 2-10 kraadise hüstereesi vahel)                               |
+| `t_IBH_Delay` | 30 min | Jätta 30 min (võimalik valida 15-120 min)                                                 |
+| `T4_IBH_ON`   | -5 °C  | <span style="color:red">Kas panna see -13 °C peale?</span> (võimalik valida +10 kuni -15) |
 
 
 ## 4. Parameetrite valiku loogika
