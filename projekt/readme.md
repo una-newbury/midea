@@ -27,16 +27,17 @@ Nende settingutega saab määrata mis hetkeni töötab kompressoriga ja elektri 
 
 | Parameeter    | Kirjeldus                                                                                                           |
 |---------------|---------------------------------------------------------------------------------------------------------------------|
-| 'T4HMAX'      | Välisõhutemperatuur, millest alates töötab madalal võimsusel või elektri/välise allikaga.                           |
-| 'T4HMIN'      | Välisõhutemperatuur, millest alates kütet enam ei tooda ja elektritenn võtab üle.                                   |
-| 'dT1_IBH_ON'  | Elektritenni sisselülitus hüsterees soovitud väljuva vee temperatuuri ja hetke väljuva vee temperatuur delta järgi. |
-| 't_IBH_Delay' | Ajaline viide kompressori sisselülitus hetkest, millal võib vajadusel elektritenni sisse lülitada.                  |
-| 'T4_IBH_ON'   | Välisõhutemperatuur, millest alates on lubatud elektritenni võimsuse puudujäägi korral lülitada.                    |
+| `T4HMAX`      | Välisõhutemperatuur, millest alates töötab madalal võimsusel või elektri/välise allikaga.                           |
+| `T4HMIN`      | Välisõhutemperatuur, millest alates kütet enam ei tooda ja elektritenn võtab üle.                                   |
+| `dT1_IBH_ON`  | Elektritenni sisselülitus hüsterees soovitud väljuva vee temperatuuri ja hetke väljuva vee temperatuur delta järgi. |
+| `t_IBH_Delay` | Ajaline viide kompressori sisselülitus hetkest, millal võib vajadusel elektritenni sisse lülitada.                  |
+| `T4_IBH_ON`   | Välisõhutemperatuur, millest alates on lubatud elektritenni võimsuse puudujäägi korral lülitada.                    |
 
 Leitavad ka manuaalist (kuigi ilma kirjelduseta):
 - https://www.emhbt.com/Manual/controller/controller-2024/kjrh-120l2/operation-manualsmarthome
-- kontroller 'KJRH-120L2'
+- kontroller `KJRH-120L2`
 
+## 3. TODO
 
 
 * nö. soojemate ilmadega,  **−12 °C välistemperatuurini**, töötaks süsteem nii, et ta ei üritaks ajada küttevee temperatuuri üle  **50–53 °C** (eeldatavasti nende eesmärk-kraadide juures elektrikulu veel ei lähe kõrgustesse).
