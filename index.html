@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Heat Pump Heating Curve Calculator</title>
+  <title>Soojuspumba Kütmiskõvera Kalkulaator</title>
   <a href="https://una-newbury.github.io/midea/" target="_blank" rel="noopener noreferrer" ><small><small>self-link</small></small></a>
   <style>
     body {
@@ -168,55 +168,55 @@
 </head>
 <body>
 <div class="container">
-  <h1>🌡️ Heat Pump Heating Curve Calculator</h1>
+  <h1>🌡️ Soojuspumba Kütmiskõvera Kalkulaator</h1>
 
   <div class="info-box">
-    <h3>About</h3>
-    <p>This calculator shows the supply water temperature (T1S) based on outdoor temperature (T4) for different heating curves. Higher curve numbers provide more aggressive heating for poorly insulated buildings.</p>
+    <h3>Teave</h3>
+    <p>See kalkulaator näitab tarnimistemperatuuri (T1S) välisõhu temperatuuri (T4) alusel erinevate kütmiskõverate jaoks. Kõrgemad kõvera numbrid pakuvad agressiivsemat kütmist halvasti isoleeritud hoonetele.</p>
   </div>
 
   <div class="controls">
     <div class="control-group">
-      <label for="curve">Heating Curve:</label>
+      <label for="curve">Kütmiskõver:</label>
       <select id="curve">
-        <option value="1">1-T1S (Gentle - well insulated)</option>
+        <option value="1">1-T1S (Leebe - hästi isoleeritud)</option>
         <option value="2">2-T1S</option>
         <option value="3">3-T1S</option>
-        <option value="4" selected>4-T1S (Typical)</option>
+        <option value="4" selected>4-T1S (Tüüpiline)</option>
         <option value="5">5-T1S</option>
         <option value="6">6-T1S</option>
         <option value="7">7-T1S</option>
-        <option value="8">8-T1S (Aggressive - poor insulation)</option>
+        <option value="8">8-T1S (Agressiivne - halb isolatsioon)</option>
       </select>
     </div>
 
     <div class="control-group">
-      <label for="offset">Offset (°C):</label>
-      <input type="number" id="offset" value="0" min="-20" max="20" step="1">
-      <span class="value-display">Current: <span id="offsetValue">0</span>°C</span>
+      <label for="offset">Nihe (°C):</label>
+      <input type="number" id="offset" value="0" min="-20" max="20" step="0.5">
+      <span class="value-display">Praegune: <span id="offsetValue">0</span>°C</span>
     </div>
 
     <div class="control-group">
-      <label for="maxTemp">Maximum Temperature Limit (°C):</label>
+      <label for="maxTemp">Maksimaalne temperatuuri limiit (°C):</label>
       <input type="number" id="maxTemp" value="60" min="40" max="80" step="1">
-      <span class="value-display">Current: <span id="maxTempValue">60</span>°C</span>
+      <span class="value-display">Praegune: <span id="maxTempValue">60</span>°C</span>
     </div>
   </div>
 </div>
 
 <div class="container">
-  <h2>📊 Visual Curve</h2>
+  <h2>📊 Visuaalne Kõver</h2>
   <canvas id="chart"></canvas>
 </div>
 
 <div class="container">
-  <h2>📋 Temperature Table</h2>
+  <h2>📋 Temperatuuri Tabel</h2>
   <table id="dataTable">
     <thead>
     <tr>
-      <th>Outdoor Temp (T4)</th>
-      <th>Set Temp (T1S)</th>
-      <th>Status</th>
+      <th>Välistemperatuur (T4)</th>
+      <th>Seatud Temperatuur (T1S)</th>
+      <th>Olek</th>
     </tr>
     </thead>
     <tbody id="tableBody">
@@ -226,8 +226,8 @@
 
 <div class="container">
   <div class="formula-box">
-    <button class="copy-button" onclick="copyFormula()">📋 Copy Formula</button>
-    <h3>Current Formula</h3>
+    <button class="copy-button" onclick="copyFormula()">📋 Kopeeri Valem</button>
+    <h3>Praegune Valem</h3>
     <div id="formulaDisplay"></div>
   </div>
 </div>
@@ -277,30 +277,30 @@
 
       const offsetStr = offset >= 0 ? `+ ${offset}` : `- ${Math.abs(offset)}`;
 
-      let formula = `Heating Curve ${curveNum}-T1S Formula:
+      let formula = `Kütmiskõver ${curveNum}-T1S Valem:
 
-if (T4 < 0):
-T1S = ${curve.a} × (0 - T4) + ${curve.b} + Offset
+kui (T4 < 0):
+T1S = ${curve.a} × (0 - T4) + ${curve.b} + Nihe
 
-else if (T4 >= 0 and T4 < 20):
-T1S = ${curve.c} × (20 - T4) + 20 + Offset
+muidu kui (T4 >= 0 ja T4 < 20):
+T1S = ${curve.c} × (20 - T4) + 20 + Nihe
 
-else if (T4 >= 20):
-T1S = 20 + Offset
+muidu kui (T4 >= 20):
+T1S = 20 + Nihe
 
-Where:
-T4 = Outdoor temperature (°C)
-T1S = Supply water temperature (°C)
-Offset = ${offset}°C
+Kus:
+T4 = Välistemperatuur (°C)
+T1S = Tarnimistemperatuur (°C)
+Nihe = ${offset}°C
 
-Finally, cap the result:
-if T1S > ${maxTemp}: T1S = ${maxTemp}
+Lõpuks, piira tulemust:
+kui T1S > ${maxTemp}: T1S = ${maxTemp}
 
-Current settings result in:
-- When T4 = -20°C: T1S = ${calculateTemp(-20, curveNum, offset, maxTemp).temp.toFixed(1)}°C
-- When T4 = 0°C: T1S = ${calculateTemp(0, curveNum, offset, maxTemp).temp.toFixed(1)}°C
-- When T4 = 10°C: T1S = ${calculateTemp(10, curveNum, offset, maxTemp).temp.toFixed(1)}°C
-- When T4 = 20°C: T1S = ${calculateTemp(20, curveNum, offset, maxTemp).temp.toFixed(1)}°C`;
+Praegused seaded annavad:
+- Kui T4 = -20°C: T1S = ${calculateTemp(-20, curveNum, offset, maxTemp).temp.toFixed(1)}°C
+- Kui T4 = 0°C: T1S = ${calculateTemp(0, curveNum, offset, maxTemp).temp.toFixed(1)}°C
+- Kui T4 = 10°C: T1S = ${calculateTemp(10, curveNum, offset, maxTemp).temp.toFixed(1)}°C
+- Kui T4 = 20°C: T1S = ${calculateTemp(20, curveNum, offset, maxTemp).temp.toFixed(1)}°C`;
 
       return formula;
   }
@@ -316,7 +316,7 @@ Current settings result in:
       navigator.clipboard.writeText(formulaText).then(() => {
           const button = document.querySelector('.copy-button');
           const originalText = button.textContent;
-          button.textContent = '✓ Copied!';
+          button.textContent = '✓ Kopeeritud!';
           button.classList.add('copied');
 
           setTimeout(() => {
@@ -324,7 +324,7 @@ Current settings result in:
               button.classList.remove('copied');
           }, 2000);
       }).catch(err => {
-          alert('Failed to copy formula to clipboard');
+          alert('Valemi kopeerimine lõikelauale ebaõnnestus');
           console.error('Copy failed:', err);
       });
   }
@@ -439,21 +439,21 @@ Current settings result in:
       // Axis titles
       ctx.font = 'bold 16px Arial';
       ctx.textAlign = 'center';
-      ctx.fillText('Outdoor Temperature (T4)', width / 2, height - 5);
+      ctx.fillText('Välistemperatuur (T4)', width / 2, height - 5);
 
       ctx.save();
       ctx.translate(15, height / 2);
       ctx.rotate(-Math.PI / 2);
-      ctx.fillText('Supply Water Temperature (T1S)', 0, 0);
+      ctx.fillText('Tarnimistemperatuur (T1S)', 0, 0);
       ctx.restore();
 
       // Legend
       ctx.font = '12px Arial';
       ctx.textAlign = 'left';
       ctx.fillStyle = '#e74c3c';
-      ctx.fillText('── Max Temp Limit (' + maxTemp + '°C)', width - padding - 180, 30);
+      ctx.fillText('── Maks temp limiit (' + maxTemp + '°C)', width - padding - 180, 30);
       ctx.fillStyle = '#3498db';
-      ctx.fillText('── Heating Curve ' + curve, width - padding - 180, 50);
+      ctx.fillText('── Kütmiskõver ' + curve, width - padding - 180, 50);
   }
 
   // Update table
@@ -478,10 +478,10 @@ Current settings result in:
 
           if (result.capped) {
               cell2.classList.add('capped');
-              cell3.textContent = '⚠️ Capped at limit';
+              cell3.textContent = '⚠️ Piiratud maksimumiga';
               cell3.classList.add('capped');
           } else {
-              cell3.textContent = '✓ Normal';
+              cell3.textContent = '✓ Normaalne';
           }
       }
   }
