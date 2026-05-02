@@ -81,6 +81,13 @@ ja (arvatavad) tehase seadistused (TS)
   - kuni ~-12 °C välisõhutemperatuurini piisab ~53 °C kütteveest
   - alla -12 °C vajab hoone ~58–60 °C
 
-$$
+
+```math
 f(x) = x^2 - 4x + 1
-$$
+```
+
+The syntax for inline latex is $`\sqrt{2}`$
+
+```math
+x=\frac{-b\pm \sqrt{b^{2}-4ac}}{2a}
+```
