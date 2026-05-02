@@ -80,3 +80,7 @@ ja (arvatavad) tehase seadistused (TS)
 - Tunnetuslik piir:
   - kuni ~-12 °C välisõhutemperatuurini piisab ~53 °C kütteveest
   - alla -12 °C vajab hoone ~58–60 °C
+
+$$
+f(x) = x^2 - 4x + 1
+$$
